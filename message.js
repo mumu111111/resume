@@ -38,8 +38,10 @@ myForm.addEventListener('submit', function (e) {
     'name': name,
     'content': content
   }).then(function (object) {
-    window.location.reload()//提交成功就替用户刷新页面
-    console.log(object)
+    let li = document.createElement('li')
+    li.innerText =`${object.attributes.name} : ${object.attributes.content}`
+    let messageList = document.querySelector('#messageList')
+    messageList.appendChild(li)
   })
 
 
@@ -51,7 +53,8 @@ myForm.addEventListener('submit', function (e) {
 // //存储的数据，存储后执行函数
 // testObject.save({
 //   'words': content
-// }).then(function(object) {
+// })
+// .then(function(object) {
 //   alert('LeanCloud Rocks!');
 // })
 
