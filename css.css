@@ -411,18 +411,7 @@ section.portfolio >nav .bar-inner{
     border-radius: 2px;
     transition: all 0.3s;
 }
-section.portfolio >nav .bar.state-1 .bar-inner{
-    width: 40px;
-    margin-left: 0;
-}
-section.portfolio >nav .bar.state-2 .bar-inner{
-    width: 70px;
-    margin-left: 60px;
-}
-section.portfolio >nav .bar.state-3 .bar-inner{
-    width: 100px;
-    margin-left: 140px;
-}
+
 section.portfolio{
     text-align: center;
     margin-bottom: 100px;
@@ -462,6 +451,10 @@ section.message > ol{
 section.message > ol > li{
     padding: 16px;
     border-bottom: 1px solid #DDD;
+}
+section.message form{
+    max-width: 700px;
+    margin: 50px auto;
 }
 
 

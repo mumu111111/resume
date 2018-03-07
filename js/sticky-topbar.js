@@ -17,7 +17,6 @@
             })
         },
         active: function(){
-            console.log(this.view+'active')
             this.view.classList.add('sticky')
         },
         deactive: function(){
