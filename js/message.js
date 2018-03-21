@@ -13,6 +13,10 @@
     //获取数据
     fetch: function () {
       var query = new AV.Query('Message');
+      var now = new Date();
+      query.lessThanOrEqualTo('createdAt', now);//查询今天之前创建的 Todo
+      query.limit(10);// 最多返回 10 条结果
+      query.descending('createdAt');
       return query.find()  //promise对象
     },
     //保存数据

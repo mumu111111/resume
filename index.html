@@ -16,7 +16,7 @@
 	<div id="topNavBar" class="topNavBar">
 		<div class="topNavBar-inner clearfix">
 			<a href="#" class="logo" alt="logo">
-				<span class="rs">RS</span><span class="card">card</span>
+				<span class="rs">T</span><span class="card">J</span>
 			</a>
 			<nav class="menu">
 				<ul class="clearfix">
@@ -24,24 +24,24 @@
 					<li><a href="#siteSkills">技能</a></li>
 					<li>
 						<a href="#sitePortfolio">作品</a>
-						<ul class="submenu">
+						<!-- <ul class="submenu">
 							<!-- 子菜单 -->
-							<li>作品1</li>
+						<!-- <li>作品1</li>
 							<li>作品2</li>
 							<li>作品3</li>
-						</ul>
+						</ul>  -->
 					</li>
 					<li>
 						<a href="#">博客</a>
-						<ul class="submenu">
+						<!-- <ul class="submenu">
 							<li>博客1</li>
 							<li>博客2</li>
 							<li>博客3</li>
-						</ul>
+						</ul> -->
 					</li>
-					<li><a href="#">日历</a></li>
-					<li><a href="#">联系方式</a></li>
-					<li><a href="#">其他</a></li>
+					<li><a href="#sitePikachu">皮卡丘</a></li>
+					<li><a href="#message">留言板</a></li>
+					
 				</ul>
 			</nav>
 		</div>
@@ -56,11 +56,11 @@
 					<img src="./img/avatar.jpg" alt="头像">
 				</div>
 				<div class="text">
-					<span class="welcome">Hello
+					<span class="welcome">你好，我是一名前端工程师
 							 <span class="triangle"></span>
 					</span>
 					<h1>滕 娟</h1>
-					<p>前端开发工程师</p>
+					<p>前端开发工程师,熟悉HTML5/CSS3/JavaScript/Vue</p>
 					<hr>
 					<dl>
 						<dt>年龄</dt>
@@ -93,12 +93,12 @@
 			</footer>
 		</div>
 		<p class="downloadResume-wrapper">
-			<a class="downloadResume" href="./resume.pdf" target="_blank" download>下载 PDF 简历</a>
+				<a class="downloadResume" href="./resume/滕娟-前端工程师.pdf" target="_blank" download>下载 PDF 简历</a>
 		</p>
-		<p class="selfIntroduction">
+		<!-- <p class="selfIntroduction">
 			滕娟，前端工程师。
 			<br>技能：前端开发
-		</p>
+		</p> -->
 	</main>
 	<section data-x class="skills" id="siteSkills">
 		<h2>技能</h2>
@@ -140,60 +140,140 @@
 				</div>
 			</li>
 	</section>
+	<section class="skill-description">
+	<h3>HTML 5 & CSS 3 </h3>
+	<p>
+		能独立制作精美网页，掌握 CSS 3 动画、过渡效果、响应式等常用技术。
+	</p>
+	<h3>jQuery</h3>
+	<p>
+		熟悉 jQuery 的常用 API，能使用 jQuery 制作网站、轮播、Tab 组件等。
+	</p>
+	<h3>小程序制作</h3>
+	<p>
+		可以独立进行小程序开发，熟悉相关API或组件的使用。
+	</p>
+
+	<h3>Vue</h3>
+	<p>
+		熟悉 Vue 常用功能，如组件、Vue-Router、双向绑定等。
+	</p>
+	<h3>移动端页面</h3>
+	<p>
+		会使用 REM、vw等技术制作适配手机设备的页面。
+	</p>
+
+	<h3>前端框架</h3>
+	<p>
+		理解 MVC、MVVM 等思想，可以熟练使用相关的库，如 Vue、React
+	</p>
+	
+</section>
 	<section data-x class="portfolio" id="sitePortfolio">
 		<h2>作品集</h2>
-		<nav>
-			<ol class="clearfix">
-				<li id="portfolio1">所有</li>
-				<li id="portfolio2">框架</li>
-				<li id="portfolio3">原生JS&amp;CSS</li>
+	
+		<div class="works">
+			<ol>
+				<li>
+					<img src="./img/nav-page1.jpg" style="display: block;">
+					<div class="clientText">
+						<p>关键词</p>
+						<div>
+							<a href="">预览链接</a>
+							<a href="">源码链接</a></div>
+						</div>
+						</li>
+				<li>
+					<img src="./img/canvas.jpg">
+					<div class="clientText">
+						<p>关键词</p>
+						<div><a href="">预览链接</a>
+							<a href="">源码链接</a></div>
+					</div>
+				</li>
+				<li>
+					<img src="./img/apple-style-slides.jpg">
+					<div class="clientText">
+						<p>关键词</p>
+						<div><a href="">预览链接</a>
+							<a href="">源码链接</a></div>
+					</div>
+				</li>
+				<li>
+					<img src="./img/nav-page1.jpg">
+					<div class="clientText">
+						<p>关键词</p>
+						<div><a href="">预览链接</a>
+							<a href="">源码链接</a></div>
+					</div>
+				</li>
+				<li>
+					<img src="./img/canvas.jpg">
+					<div class="clientText">
+						<p>关键词</p>
+						<div><a href="">预览链接</a>
+							<a href="">源码链接</a></div>
+					</div>
+				</li>
+				
+				<li>
+					<img src="./img/apple-style-slides.jpg">
+					<div class="clientText">
+						<p>关键词</p>
+						<div><a href="">预览链接</a>
+							<a href="">源码链接</a></div>
+					</div>
+				</li>
+
 			</ol>
-			<div id="portfolioBar" class="bar state-1">
-				<div class="bar-inner"></div>
-			</div>
-		</nav>
-		
-		<div id="mySlides">
-			<div class="swiper-container">
-				<!-- Additional required wrapper -->
-				<div class="swiper-wrapper">
-					<!-- Slides -->
-					<img src="./img/nav-page1.jpg" class="swiper-slide">
-					<img src="./img/canvas.jpg" class="swiper-slide">
-					<img src="./img/apple-style-slides.jpg" class="swiper-slide">
-				</div>
-				<!-- If we need pagination -->
-				<div class="swiper-pagination"></div>
-				<!-- If we need scrollbar -->
-				<!-- <div class="swiper-scrollbar"></div> -->
-			</div>
-			<!-- If we need navigation buttons -->
-			<div class="swiper-button-prev"></div>
-			<div class="swiper-button-next"></div>
+		</div>
+
+	</section>
+	<section data-x class="pikachu" id="sitePikachu">
+		<h2>皮卡丘</h2>
+		<div class="work-pikachu">
+			<img src="./img/pikachu.jpg" alt="" height="560px">
 		</div>
 	</section>
-	<section class="message">
-		<h2>留言</h2>
-		<ol id="messageList">
 
-		</ol>
-		<form action="" id="postMessageForm">
-			<label for="">姓名</label>
-			<input type="text" name="name">
-			<label for="">内容</label>
-			<input type="text" name="content">
-			<input type="submit" value="提交">
-		</form>
+	<section data-x class="message" id="message">
+		<h2>留言</h2>
+		<div class="concatMessage">
+			<img src="./img/work.jpg" alt="" height='180px'>
+			<div class="message-container">
+				<form action="" id="postMessageForm">
+					<div class="row">
+							<label for="">姓名</label>
+							<input type="text" name="name" placeholder="enter your name">
+							
+					</div>
+					<div class="row">
+							<label for="">内容</label>
+							<input type="text" name="content"  placeholder="enter message">
+					</div>
+					<div class="row">
+						<button>SEND -></button>		
+					</div>
+				</form>
+				<ol id="messageList">
+				</ol>
+			</div>
+
+		</div>
+		
+		
 	</section>
+	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 	<script src='./js/loading.js'></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.2.0/Tween.min.js'></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/js/swiper.min.js"></script>
 	<script src="//cdn1.lncld.net/static/js/3.6.0/av-min.js"></script>
 	<!-- 模块化 -->
-	<script src='./js/init-swiper.js'></script>
+	<!-- <script src='./js/init-swiper.js'></script> -->
 	<script src='./js/auto-slide-up.js'></script>
 	<script src='./js/sticky-topbar.js'></script>
 	<script src='./js/smoothly-navigation.js'></script>
+	<script src="./js/light-hight.js"></script>
 	<script src='./js/message.js'></script>
 </body>
 

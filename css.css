@@ -17,6 +17,9 @@ a{
     color: inherit;
     text-decoration: none;
 }
+img{
+    width: 100%;
+}
 hr{
     height: 0;
     border: none;
@@ -152,7 +155,7 @@ hr{
         width: 100%;
     }
 }
-
+/* 
 .topNavBar .submenu{
     display: none;
     position: absolute;
@@ -179,7 +182,7 @@ hr{
     white-space: nowrap;
     padding: 5px 10px;
 } 
-
+ */
 
 .topNavBar .logo{
     float: left;
@@ -305,7 +308,7 @@ body > main  .downloadResume-wrapper .downloadResume:hover{
     box-shadow: 0px 4px 16px 0px rgba(184,184,184,1);
     
 }
-body > main .selfIntroduction{
+/* body > main .selfIntroduction{
     max-width: 940px;
     margin-left: auto;
     margin-right: auto;
@@ -313,11 +316,13 @@ body > main .selfIntroduction{
     font-size: 18px;
     line-height: 1.8;
     font-family: sans-serif;
-}
+} */
 
 section.skills,
+section.skill-description,
 section.message,
-section.portfolio{
+section.pikachu
+{
     max-width: 940px;
     margin-left: auto;
     margin-right: auto;
@@ -326,6 +331,7 @@ section.portfolio{
 }
 section.skills > h2,
 section.message > h2,
+section.pikachu > h2,
 section.portfolio > h2{
     text-align: center;
     font-size: 34px;
@@ -379,7 +385,7 @@ section.skills.offset .progress{
 }
 
 
-section.portfolio >nav{
+/* section.portfolio >nav{
     text-align: center;
     display: inline-block;
     vertical-align: top;
@@ -410,12 +416,61 @@ section.portfolio >nav .bar-inner{
     background: #E6686A;
     border-radius: 2px;
     transition: all 0.3s;
+} */
+section.skill-description{
+    margin-bottom: 40px;
 }
-
 section.portfolio{
+    padding: 40px 0;
+    margin-bottom: 40px;
+    background-color: white;
+}
+.works{
+    margin-top: 30px;
+    
+}
+.works > ol{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+.works > ol > li{
+    box-sizing: border-box;
+    width: 33.333333%;
+    position: relative;
+    padding: 10px 15px;
+    transition: box-shadow 0.3s;
+    box-shadow: 0px 4px 16px 0px rgba(184,184,184,1);
+    font-size:0;
+}
+.works > ol > li > img{
+    vertical-align:bottom;
+}
+.works > ol > li:hover .clientText{
+    display: block;
+    transition: all 1s;
+}
+.clientText{
+    display: none;
+    font-family: proxima_novasemibold,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    line-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 25% 0;
+    background: rgba(239,239,239,.82);
+    color: #808184;
     text-align: center;
-    margin-bottom: 100px;
-    max-width: 730px;
+}
+.clientText p{
+    color: #3D3C3C;
+    line-height: 2; 
+}
+/* section.portfolio #mySlides{
+    margin-top: 30px;
 }
 section.portfolio .swiper-container {
     width: 668px;
@@ -441,22 +496,47 @@ section.portfolio .swiper-button-next{
 }
 [data-x].offset{
     transform: translateY(180px);
+} */
+section.pikachu{
+    margin-top: 40px;
 }
 
-section.message > ol{
-    max-width: 700px;
-    margin: 0 auto;
-    border-top: 1px solid #DDD;
+.work-pikachu{
+    margin-top: 30px;
+    padding: 0 60px;
+    
 }
-section.message > ol > li{
+section.message  ol{
+    width: 48%;
+    border-top: 1px solid #616C70;
+}
+section.message  ol > li{
     padding: 16px;
-    border-bottom: 1px solid #DDD;
-}
-section.message form{
-    max-width: 700px;
-    margin: 50px auto;
+    border-bottom: 1px solid #474747;
 }
 
+section.message .message-container{
+    background-color: #3e3c3b; 
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+section.message form{
+    height: 300px;
+    
+}
+section.message .row{
+    padding: 10px 40px;
+}
+section.message .row input{
+    
+    border: none;
+    outline: none;
+    height: 20px;
+    border-bottom: 1px solid #98a3a7;
+    background: #3e3c3b;
+}
 
 
 
