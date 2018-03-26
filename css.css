@@ -319,16 +319,15 @@ body > main  .downloadResume-wrapper .downloadResume:hover{
 } */
 
 section.skills,
-section.skill-description,
 section.message,
-section.pikachu
 {
     max-width: 940px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 60px;
+    margin: 90px 0;
     border-radius: 2px;
 }
+
 section.skills > h2,
 section.message > h2,
 section.pikachu > h2,
@@ -417,11 +416,10 @@ section.portfolio >nav .bar-inner{
     border-radius: 2px;
     transition: all 0.3s;
 } */
-section.skill-description{
-    margin-bottom: 40px;
-}
+
 section.portfolio{
     padding: 40px 0;
+    margin-top: 40px;
     margin-bottom: 40px;
     background-color: white;
 }
@@ -537,8 +535,62 @@ section.message .row input{
     border-bottom: 1px solid #98a3a7;
     background: #3e3c3b;
 }
+.concatMessage{
+    margin-top:30px;
+}
+.right {
+    padding: 10px;
+    margin-left: 10%;
+    width: 40%;
+  }
+   
+.wrap {
+  display: flex;
+  justify-content: center;
+}
 
+input {
+      font-size: 16px;
+      resize: none;
+      border: none;
+      width: 100%;
+      border-bottom: 1px solid #4D4D4D;
+      height: 100%;
+      padding: 10px 0;
+}
+.input-field {
+      display: flex;
+      position: relative;
+      margin-bottom: 30px;
+}
 
+ 
+ 
+
+    
+ 
+
+    input[type=submit] {
+      width: auto;
+      padding: 60px 80px;
+      font-size: 14px;
+      font-weight: 700;
+      font-family: "Open Sans", sans-serif;
+      line-height: 1.1;
+      letter-spacing: 0.03em;
+      text-align: center;
+      text-transform: uppercase;
+      vertical-align: middle;
+      display: inline-block;
+      cursor: pointer;
+      padding: 12px 20px;
+      margin: 0;
+      border: none;
+      background-image: none;
+      background: #00d3aa;
+      border-radius: 4px;
+      color: #fff;
+    }
 
 
 
